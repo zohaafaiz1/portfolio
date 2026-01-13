@@ -14,11 +14,8 @@
 </head>
 <body>
 
-  <!-- TECH BACKGROUND CANVAS -->
-  <canvas id="bg-canvas"></canvas>
-
-<!-- HERO -->
-<section class="hero">
+<!-- HERO SECTION -->
+<section class="hero fade-in">
   <div class="hero-left">
     <h1>Zoha Faiz</h1>
     <p class="title">3rd Year Data Science Student</p>
@@ -36,79 +33,71 @@
   <h2>🔥 Case Study Projects</h2>
   <div class="projects-container">
 
-    <!-- EV Vehicle Data Warehouse -->
     <div class="project-card fade-in">
       <h3>EV Vehicle Data Warehouse | Developer</h3>
       <p><strong>Problem:</strong> EV and charging station data was scattered and hard to analyze.</p>
-      <p><strong>Solution:</strong> Designed a PostgreSQL star-schema warehouse, built ETL pipelines, and created dashboards for actionable insights.</p>
-      <p><strong>Tech:</strong> Python, PostgreSQL, ETL pipelines, Power BI (organized data efficiently and visualized KPIs)</p>
-      <p><strong>Learned:</strong> Optimizing data pipelines, schema design, dashboard storytelling.</p>
+      <p><strong>Solution:</strong> Designed a PostgreSQL star-schema warehouse, built ETL pipelines, and created dashboards.</p>
+      <p><strong>Tech:</strong> Python, PostgreSQL, ETL pipelines, Power BI</p>
+      <p><strong>Learned:</strong> Optimizing pipelines, schema design, dashboard storytelling.</p>
     </div>
 
-    <!-- Study Sync -->
     <div class="project-card fade-in">
       <h3>Study Sync | Developer</h3>
-      <p><strong>Problem:</strong> Students struggled with managing tasks, schedules, and study efficiency.</p>
-      <p><strong>Solution:</strong> Built an AI-assisted study platform with personalized timetables, Pomodoro timers, and peer collaboration.</p>
-      <p><strong>Tech:</strong> Python, JS, task tracking, AI scheduling logic</p>
-      <p><strong>Learned:</strong> Integrating AI with UI, UX for productivity apps, real-time notifications.</p>
+      <p><strong>Problem:</strong> Students struggled with managing tasks, schedules, and efficiency.</p>
+      <p><strong>Solution:</strong> AI-assisted study platform with personalized timetables, Pomodoro timers, and collaboration.</p>
+      <p><strong>Tech:</strong> Python, JS, AI logic</p>
+      <p><strong>Learned:</strong> Integrating AI with UI, real-time notifications.</p>
     </div>
 
-    <!-- SMS Spam Classifier -->
     <div class="project-card fade-in">
       <h3>SMS Spam Classifier | Developer</h3>
-      <p><strong>Problem:</strong> Need to automatically detect spam messages in SMS data.</p>
-      <p><strong>Solution:</strong> Preprocessed text, performed EDA, and trained Naïve Bayes & SVM models for classification.</p>
-      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn (for data preprocessing and ML modeling)</p>
+      <p><strong>Problem:</strong> Detect spam messages automatically.</p>
+      <p><strong>Solution:</strong> Preprocessed text, EDA, trained Naïve Bayes & SVM models.</p>
+      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
       <p><strong>Learned:</strong> Text preprocessing, model evaluation, feature engineering.</p>
     </div>
 
-    <!-- Shipping Status Prediction -->
     <div class="project-card fade-in">
       <h3>Shipping Status Prediction | Developer</h3>
       <p><strong>Problem:</strong> Predict shipment delivery times accurately.</p>
-      <p><strong>Solution:</strong> Collected and engineered features, trained Decision Tree & Regression models, and evaluated predictions.</p>
-      <p><strong>Tech:</strong> Python, Scikit-learn, Pandas (predictive modeling and error metrics)</p>
-      <p><strong>Learned:</strong> Feature engineering, regression modeling, evaluation metrics.</p>
+      <p><strong>Solution:</strong> Feature engineering, trained Decision Tree & Regression models.</p>
+      <p><strong>Tech:</strong> Python, Scikit-learn, Pandas</p>
+      <p><strong>Learned:</strong> Regression modeling, evaluation metrics.</p>
     </div>
 
-    <!-- AI PresenterPro -->
     <div class="project-card fade-in">
       <h3>AI PresenterPro (Ongoing) | Developer</h3>
-      <p><strong>Problem:</strong> Improve presentation delivery via feedback on body language and eye contact.</p>
-      <p><strong>Solution:</strong> Built AI system analyzing posture, gaze, and real-time feedback logic.</p>
+      <p><strong>Problem:</strong> Improve presentation delivery via real-time feedback.</p>
+      <p><strong>Solution:</strong> AI system analyzing posture, gaze, and feedback logic.</p>
       <p><strong>Tech:</strong> Python, OpenCV, AI/ML models</p>
-      <p><strong>Learned:</strong> Real-time feedback systems, computer vision, user interaction design.</p>
+      <p><strong>Learned:</strong> Computer vision, user interaction design.</p>
     </div>
 
   </div>
 </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section muted">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h4>Languages</h4>
-          <p>Python, SQL, C++, C, C#</p>
-        </div>
-        <div>
-          <h4>Data & Analytics</h4>
-          <p>Pandas, NumPy, Power BI, PostgreSQL</p>
-        </div>
-        <div>
-          <h4>Machine Learning</h4>
-          <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
-        </div>
-        <div>
-          <h4>Tools</h4>
-          <p>Git, ETL Pipelines, OpenCV</p>
-        </div>
-      </div>
+<!-- SKILLS -->
+<section id="skills" class="section muted fade-in">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>
+      <h4>Languages</h4>
+      <p>Python, SQL, C++, C, C#</p>
     </div>
-  </section>
-
+    <div>
+      <h4>Data & Analytics</h4>
+      <p>Pandas, NumPy, Power BI, PostgreSQL</p>
+    </div>
+    <div>
+      <h4>Machine Learning</h4>
+      <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <p>Git, ETL Pipelines, OpenCV</p>
+    </div>
+  </div>
+</section>
 
 <!-- CERTIFICATES -->
 <section id="certificates" class="section fade-in">
@@ -116,12 +105,13 @@
   <div class="certificates-container">
     <div class="certificate-card">Introduction to Python (DataCamp)</div>
     <div class="certificate-card">Introduction to SQL (DataCamp)</div>
-    <div class="certificate-card">Feature Engineering for Machine Learning (DataCamp)</div>
-    <div class="certificate-card">Introduction to Deep Learning with PyTorch</div>
+    <div class="certificate-card">Feature Engineering (DataCamp)</div>
+    <div class="certificate-card">Deep Learning with PyTorch</div>
     <div class="certificate-card">Prompt Engineering with OpenAI API</div>
     <div class="certificate-card">Working with OpenAI API</div>
   </div>
 </section>
+
 <!-- CONTACT -->
 <section id="contact" class="section fade-in">
   <h2>Contact Me</h2>
@@ -141,11 +131,10 @@
   </div>
 </section>
 
-  <footer>
-    <p>© 2026 Zoha Faiz</p>
-  </footer>
+<footer>
+  <p>© 2026 Zoha Faiz</p>
+</footer>
 
-  
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
