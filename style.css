@@ -1,4 +1,4 @@
-/* GENERAL RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@ body {
   background-color: #0f111a;
   color: #d0dce0;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -22,6 +23,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: 0.3s;
 }
 
 nav .logo {
@@ -43,6 +45,7 @@ nav ul li a {
   color: #d0dce0;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -59,6 +62,7 @@ nav ul li a:hover {
 .hero h1 {
   font-size: 3rem;
   color: #00bfa6;
+  animation: float 3s ease-in-out infinite;
 }
 
 .hero p {
@@ -66,7 +70,7 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-.hero a {
+.hero a.btn {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 25px;
@@ -75,11 +79,33 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s;
 }
 
-.hero a:hover {
+.hero a.btn:hover {
+  transform: translateY(-5px);
   background-color: #008c7a;
   color: #fff;
+}
+
+/* FADE IN EFFECT */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HERO FLOAT ANIMATION */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 /* SECTIONS */
@@ -99,6 +125,12 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,191,166,0.3);
 }
 
 .project a {
@@ -114,23 +146,19 @@ nav ul li a:hover {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .skill-box {
   background-color: #1a1e2b;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1 1 300px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  transition: transform 0.3s, background 0.3s;
 }
 
-/* LISTS */
-ul {
-  list-style: disc inside;
-}
-
-ul li {
-  margin-bottom: 8px;
+.skill-box:hover {
+  transform: scale(1.05);
+  background-color: #008c7a;
 }
 
 /* CONTACT & FOOTER */
