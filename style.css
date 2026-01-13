@@ -238,4 +238,26 @@ a:hover {
   transform: translateY(20px);
   transition: all 0.7s ease-out;
 }
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00bfa6;
+  color: #0f111a;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 100;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+  background-color: #008c7a;
+}
+
 
