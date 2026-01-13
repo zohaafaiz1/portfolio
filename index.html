@@ -1,112 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zoha Faiz | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <h2 class="logo">Zoha Faiz</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">Zoha Faiz</span>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content fade-in">
-      <h1>Hi, I’m Zoha 👋</h1>
-      <p>Data Science undergraduate | Python • SQL • Analytics</p>
-      <p>
-        <a href="https://github.com/zohaafaiz1" target="_blank">GitHub</a> | 
-        <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">LinkedIn</a>
+    <div class="container hero-content">
+      <h1>Data & AI-Focused Developer</h1>
+      <p class="hero-sub">
+        I build data-driven systems, analytics pipelines, and applied machine learning projects.
       </p>
-      <a href="#projects" class="btn">View My Work</a>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="https://github.com/zohaafaiz1" target="_blank" class="btn secondary">GitHub</a>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section fade-in">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Science undergraduate passionate about building practical projects in analytics, machine learning, and data pipelines.  
-      I enjoy turning raw data into insights and making data-driven solutions.
-    </p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        I’m a Data Science undergraduate focused on building practical analytics and AI systems.
+        I enjoy working close to real data — designing pipelines, structuring datasets, and turning
+        messy inputs into useful insights.
+      </p>
+    </div>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-box fade-in">Python</div>
-      <div class="skill-box fade-in">SQL</div>
-      <div class="skill-box fade-in">C++ / C / C#</div>
-      <div class="skill-box fade-in">PostgreSQL</div>
-      <div class="skill-box fade-in">Power BI</div>
-      <div class="skill-box fade-in">Pandas / NumPy</div>
-      <div class="skill-box fade-in">Scikit-learn</div>
-      <div class="skill-box fade-in">ETL Pipelines</div>
-      <div class="skill-box fade-in">Data Warehousing</div>
-      <div class="skill-box fade-in">Git</div>
-      <div class="skill-box fade-in">Figma</div>
+  <section id="skills" class="section muted">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>Python, SQL, C++, C, C#</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Data & Analytics</h3>
+          <p>Pandas, NumPy, Power BI, PostgreSQL, Data Warehousing</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, ETL Pipelines, OpenCV, Figma</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-    <div class="projects-container">
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
 
-      <div class="project-card fade-in">
-        <h3>EV Vehicle Data Warehouse <span class="role">| Developer</span></h3>
-        <p class="repo"><a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">zohaafaiz1/EV-Vehicle-dw</a></p>
-        <p>Designed and implemented a PostgreSQL star-schema data warehouse to organize EV and charging-station data, built ETL pipelines, and created dashboards for actionable insights.</p>
-        <p class="tech"><strong>Technologies:</strong> Fact & dimension tables, CSV data pipelines, Power BI dashboards, Python, PostgreSQL, ETL</p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>EV Vehicle Data Warehouse</h3>
+          <p class="project-desc">
+            Designed a PostgreSQL star-schema data warehouse and ETL pipelines to analyze EV and
+            charging-station data, enabling structured analytics and dashboards.
+          </p>
+          <p class="project-tech">
+            Python · PostgreSQL · ETL · Power BI
+          </p>
+          <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Study Sync</h3>
+          <p class="project-desc">
+            Built a study management platform featuring task tracking, Pomodoro workflows,
+            and AI-based timetable generation to improve study consistency.
+          </p>
+          <p class="project-tech">
+            Python · AI Logic · Task Systems
+          </p>
+          <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <h3>SMS Spam Classifier</h3>
+          <p class="project-desc">
+            Preprocessed SMS text data and trained Naïve Bayes and SVM models,
+            evaluating performance using precision, recall, and accuracy.
+          </p>
+          <p class="project-tech">
+            Python · Scikit-learn · NLP
+          </p>
+          <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">View on GitHub →</a>
+        </div>
+
       </div>
-
-      <div class="project-card fade-in">
-        <h3>Study Sync (All-in-One Study Site) <span class="role">| Developer</span></h3>
-        <p class="repo"><a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">zohaafaiz1/Study-sync</a></p>
-        <p>Developed a study management platform with AI-based personalized timetables, Pomodoro timers, task tracking, and water-intake reminders, enhancing study efficiency and peer collaboration.</p>
-        <p class="tech"><strong>Technologies:</strong> AI scheduling logic, task tracking, peer resource sharing</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <h3>SMS Spam Classifier <span class="role">| Developer</span></h3>
-        <p class="repo"><a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">zohaafaiz1/SMS-SPAM</a></p>
-        <p>Preprocessed and cleaned SMS text data, performed exploratory data analysis, and trained & optimized Naïve Bayes and SVM models for spam detection.</p>
-        <p class="tech"><strong>Technologies:</strong> Text preprocessing, EDA, model evaluation (accuracy, precision, recall); Python, Pandas, Scikit-learn</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <h3>Shipping Status Prediction <span class="role">| Developer</span></h3>
-        <p class="repo"><a href="https://github.com/zohaafaiz1/Shipping-prediction" target="_blank">zohaafaiz1/Shipping-prediction</a></p>
-        <p>Collected, preprocessed, and engineered shipment data features, trained Decision Tree and Regression models, and evaluated predictions for accuracy.</p>
-        <p class="tech"><strong>Technologies:</strong> Feature engineering, predictive modeling, MAE/RMSE/R² evaluation; Python, Scikit-learn, Pandas</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <h3>AI PresenterPro (Ongoing) <span class="role">| Developer</span></h3>
-        <p>Built an AI system analyzing body language, posture, and eye contact, providing real-time feedback to improve presentation delivery.</p>
-        <p class="tech"><strong>Technologies:</strong> Real-time feedback, security research applications; Python, OpenCV, AI/ML models</p>
-      </div>
-
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <p>Email: zohafaiz768@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/zohaafaiz1" target="_blank">zohaafaiz1</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">zoha-faiz</a></p>
+  <section id="contact" class="section muted">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: zohafaiz768@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/zohaafaiz1" target="_blank">zohaafaiz1</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">zoha-faiz</a></p>
+    </div>
   </section>
 
   <footer>
