@@ -17,83 +17,72 @@
   <!-- TECH BACKGROUND CANVAS -->
   <canvas id="bg-canvas"></canvas>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-container">
-      <div class="hero-left">
-        <h1>Zoha Faiz</h1>
-        <p class="hero-title">3rd Year Data Science Student</p>
-        <p class="hero-desc">
-          Passionate about data analytics, machine learning, and building practical data-driven systems.
-        </p>
-      </div>
-      <div class="hero-right">
-        <a href="#projects" class="hero-btn">Projects</a>
-        <a href="#skills" class="hero-btn">Skills</a>
-        <a href="#certificates" class="hero-btn">Certificates</a>
-        <a href="#contact" class="hero-btn primary">Contact</a>
-      </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Zoha Faiz</h1>
+    <p class="title">3rd Year Data Science Student</p>
+  </div>
+  <div class="hero-right">
+    <a href="#projects" class="hero-btn">Projects</a>
+    <a href="#skills" class="hero-btn">Skills</a>
+    <a href="#contact" class="hero-btn">Contact</a>
+    <a href="#certificates" class="hero-btn">Certificates</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section fade-in">
+  <h2>🔥 Case Study Projects</h2>
+  <div class="projects-container">
+
+    <!-- EV Vehicle Data Warehouse -->
+    <div class="project-card fade-in">
+      <h3>EV Vehicle Data Warehouse | Developer</h3>
+      <p><strong>Problem:</strong> EV and charging station data was scattered and hard to analyze.</p>
+      <p><strong>Solution:</strong> Designed a PostgreSQL star-schema warehouse, built ETL pipelines, and created dashboards for actionable insights.</p>
+      <p><strong>Tech:</strong> Python, PostgreSQL, ETL pipelines, Power BI (organized data efficiently and visualized KPIs)</p>
+      <p><strong>Learned:</strong> Optimizing data pipelines, schema design, dashboard storytelling.</p>
     </div>
-  </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-          <h3>EV Vehicle Data Warehouse | Developer</h3>
-          <p><strong>Problem:</strong> EV and charging station data was scattered and hard to analyze.</p>
-          <p><strong>Solution:</strong> Designed a PostgreSQL star-schema data warehouse, built ETL pipelines, and dashboards for actionable insights.</p>
-          <p><strong>Tech used:</strong> Python for ETL, PostgreSQL for structured storage, Power BI for dashboards — chosen for scalability and visualization.</p>
-          <p><strong>What broke / Learned:</strong> Handling CSV inconsistencies was tricky; learned robust data cleaning and schema design.</p>
-          <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">GitHub →</a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-          <h3>Study Sync | Developer</h3>
-          <p><strong>Problem:</strong> Students lacked a unified platform to track study tasks and manage time efficiently.</p>
-          <p><strong>Solution:</strong> Built a web platform with AI-based timetables, Pomodoro timers, task tracking, and water-intake reminders.</p>
-          <p><strong>Tech used:</strong> Python backend for AI scheduling logic, HTML/CSS/JS frontend — easy to prototype and expand features.</p>
-          <p><strong>What broke / Learned:</strong> Syncing real-time tasks was complex; improved async handling and state management.</p>
-          <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">GitHub →</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-          <h3>SMS Spam Classifier | Developer</h3>
-          <p><strong>Problem:</strong> Filtering spam messages efficiently from raw SMS data.</p>
-          <p><strong>Solution:</strong> Cleaned & preprocessed text data, trained Naïve Bayes and SVM models, and evaluated predictions.</p>
-          <p><strong>Tech used:</strong> Python, Pandas for preprocessing, Scikit-learn for ML models — for speed and reliability.</p>
-          <p><strong>What broke / Learned:</strong> Feature extraction required fine-tuning; learned importance of TF-IDF and cross-validation.</p>
-          <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">GitHub →</a>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card">
-          <h3>Shipping Status Prediction | Developer</h3>
-          <p><strong>Problem:</strong> Predicting shipment delays and statuses from historical logistics data.</p>
-          <p><strong>Solution:</strong> Engineered features, trained Decision Tree and Regression models, and evaluated predictions using MAE/RMSE metrics.</p>
-          <p><strong>Tech used:</strong> Python & Scikit-learn for ML, Pandas for data handling — fast experimentation and analysis.</p>
-          <p><strong>What broke / Learned:</strong> Handling missing data was challenging; learned proper feature imputation and evaluation metrics.</p>
-          <a href="https://github.com/zohaafaiz1/Shipping-prediction" target="_blank">GitHub →</a>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card">
-          <h3>AI PresenterPro (Ongoing) | Developer</h3>
-          <p><strong>Problem:</strong> Users struggle to improve presentation skills without feedback.</p>
-          <p><strong>Solution:</strong> Built AI system analyzing body language, posture, and eye contact, giving real-time feedback.</p>
-          <p><strong>Tech used:</strong> Python, OpenCV, ML models — real-time detection and feedback with minimal latency.</p>
-          <p><strong>What broke / Learned:</strong> Accurate gaze tracking was tricky; learned calibration techniques and real-time optimization.</p>
-        </div>
-
-      </div>
+    <!-- Study Sync -->
+    <div class="project-card fade-in">
+      <h3>Study Sync | Developer</h3>
+      <p><strong>Problem:</strong> Students struggled with managing tasks, schedules, and study efficiency.</p>
+      <p><strong>Solution:</strong> Built an AI-assisted study platform with personalized timetables, Pomodoro timers, and peer collaboration.</p>
+      <p><strong>Tech:</strong> Python, JS, task tracking, AI scheduling logic</p>
+      <p><strong>Learned:</strong> Integrating AI with UI, UX for productivity apps, real-time notifications.</p>
     </div>
-  </section>
+
+    <!-- SMS Spam Classifier -->
+    <div class="project-card fade-in">
+      <h3>SMS Spam Classifier | Developer</h3>
+      <p><strong>Problem:</strong> Need to automatically detect spam messages in SMS data.</p>
+      <p><strong>Solution:</strong> Preprocessed text, performed EDA, and trained Naïve Bayes & SVM models for classification.</p>
+      <p><strong>Tech:</strong> Python, Pandas, Scikit-learn (for data preprocessing and ML modeling)</p>
+      <p><strong>Learned:</strong> Text preprocessing, model evaluation, feature engineering.</p>
+    </div>
+
+    <!-- Shipping Status Prediction -->
+    <div class="project-card fade-in">
+      <h3>Shipping Status Prediction | Developer</h3>
+      <p><strong>Problem:</strong> Predict shipment delivery times accurately.</p>
+      <p><strong>Solution:</strong> Collected and engineered features, trained Decision Tree & Regression models, and evaluated predictions.</p>
+      <p><strong>Tech:</strong> Python, Scikit-learn, Pandas (predictive modeling and error metrics)</p>
+      <p><strong>Learned:</strong> Feature engineering, regression modeling, evaluation metrics.</p>
+    </div>
+
+    <!-- AI PresenterPro -->
+    <div class="project-card fade-in">
+      <h3>AI PresenterPro (Ongoing) | Developer</h3>
+      <p><strong>Problem:</strong> Improve presentation delivery via feedback on body language and eye contact.</p>
+      <p><strong>Solution:</strong> Built AI system analyzing posture, gaze, and real-time feedback logic.</p>
+      <p><strong>Tech:</strong> Python, OpenCV, AI/ML models</p>
+      <p><strong>Learned:</strong> Real-time feedback systems, computer vision, user interaction design.</p>
+    </div>
+
+  </div>
+</section>
 
   <!-- SKILLS -->
   <section id="skills" class="section muted">
