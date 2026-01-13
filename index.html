@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoha Faiz | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -19,21 +19,35 @@
     </ul>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO / CV SUMMARY -->
   <section class="hero">
-    <h1>Hi, I’m Zoha 👋</h1>
-    <p>Data Science Undergraduate | Python • SQL • Analytics</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-content">
+      <h1>Zoha Faiz</h1>
+      <p>Lahore, Pakistan | +92 331 6906983 | zohafaiz768@gmail.com</p>
+      <p>
+        <a href="https://github.com/zohaafaiz1" target="_blank">GitHub</a> | 
+        <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">LinkedIn</a>
+      </p>
+      <h3>Professional Summary</h3>
+      <p>
+        Data Science undergraduate with hands-on experience in Python, SQL, ETL pipelines, and machine learning. Strong in data cleaning, feature engineering, database design, and model evaluation. Built end-to-end projects in data warehousing, predictive analytics, and text classification using PostgreSQL, Pandas, and Scikit-learn. Seeking data-focused internship roles to apply analytical and problem-solving skills in real-world environments.
+      </p>
+    </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a Data Science undergraduate focused on data analytics, Python, SQL,
-      and building practical projects. I am actively improving my skills through
-      hands-on work and real-world datasets.
-    </p>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h4>Languages</h4>
+        <p>Python, SQL, C++, C, C#</p>
+      </div>
+      <div class="skill-box">
+        <h4>Technologies</h4>
+        <p>PostgreSQL, Power BI, Pandas, NumPy, Scikit-learn, ETL Pipelines, Data Warehousing, Machine Learning, Git, Figma</p>
+      </div>
+    </div>
   </section>
 
   <!-- PROJECTS -->
@@ -42,41 +56,62 @@
 
     <div class="project">
       <h3>EV Vehicle Data Warehouse</h3>
-      <p>
-        Built a PostgreSQL star-schema data warehouse and created analytics-ready
-        datasets for EV sales insights.
-      </p>
-      <a href="#" target="_blank">GitHub Repo</a>
+      <p>Accomplished structured EV data analytics as measured by efficient querying and reporting for 100k+ records, by designing a PostgreSQL star-schema data warehouse, building ETL pipelines for automated data ingestion, and creating Power BI dashboards for visual analytics.</p>
+      <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">GitHub Repo</a>
     </div>
 
     <div class="project">
-      <h3>Power BI Sales Dashboard</h3>
-      <p>
-        Designed an interactive Power BI dashboard to analyze sales trends and
-        business performance.
-      </p>
-      <a href="#" target="_blank">GitHub Repo</a>
+      <h3>Study Sync (All-in-One Study Site)</h3>
+      <p>Accomplished improved study organization as measured by task scheduling, note tracking, and Pomodoro timer usage, by developing a C# (WinForms) application with features including to-do lists, personalized timetables, subject notes, book lists, and basic ChatGPT integration.</p>
+      <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">GitHub Repo</a>
     </div>
+
+    <div class="project">
+      <h3>SMS Spam Classifier</h3>
+      <p>Accomplished accurate SMS spam detection as measured by 92% accuracy, precision, and recall, by performing text preprocessing, feature engineering, and training Naïve Bayes and SVM machine learning models using Python and Scikit-learn.</p>
+      <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Shipping Status Prediction</h3>
+      <p>Accomplished reliable shipment predictions as measured by MAE &lt; 1.5, RMSE &lt; 2.0, and R² &gt; 0.85, by engineering predictive features, training Decision Tree and Regression models, and performing data analysis and model evaluation using Python.</p>
+      <a href="https://github.com/zohaafaiz1/Shipping-prediction" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>AI PresenterPro (Ongoing)</h3>
+      <p>Developing real-time presentation behavior analysis to provide continuous visual feedback and posture monitoring, by researching and building a computer vision system for posture, head pose, and eye-contact tracking, integrating AI-driven analytics using Python and OpenCV.</p>
+    </div>
+
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Python</li>
-      <li>SQL</li>
-      <li>Power BI</li>
-      <li>Data Analysis</li>
-      <li>HTML, CSS, JavaScript</li>
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>BSc in Data Science</strong> – National University of Computer and Emerging Sciences (FAST-NUCES), 2023 – Present</p>
+    <p><strong>Intermediate in Pre-Engineering</strong> – Kinnaird College for Women (KCWU), 2021 – 2023</p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Introduction to Python (DataCamp)</li>
+      <li>Introduction to SQL (DataCamp)</li>
+      <li>Feature Engineering for Machine Learning (DataCamp)</li>
+      <li>Introduction to Deep Learning with PyTorch (DataCamp)</li>
+      <li>Prompt Engineering with OpenAI API (DataCamp)</li>
+      <li>Working with OpenAI API (DataCamp)</li>
     </ul>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: zoha.faiz@email.com</p>
-    <p>GitHub: github.com/zohaafaiz1</p>
-    <p>LinkedIn: linkedin.com/in/zoha-faiz</p>
+    <p>Email: zohafaiz768@gmail.com</p>
+    <p>Phone: +92 331 6906983</p>
+    <p>GitHub: <a href="https://github.com/zohaafaiz1" target="_blank">zohaafaiz1</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">zoha-faiz</a></p>
   </section>
 
   <footer>
