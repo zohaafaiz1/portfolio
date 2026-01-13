@@ -14,72 +14,28 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <span class="logo">Zoha Faiz</span>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
+  <!-- NAVBAR / HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <h1>Zoha Faiz</h1>
+      <p class="title">3rd Year Data Science Student</p>
     </div>
-  </nav>
 
-  <!-- HERO -->
+    <nav class="header-right">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO / INTRO -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Data & AI-Focused Developer</h1>
-      <p class="hero-sub">
-        I build data-driven systems, analytics pipelines, and applied machine learning projects.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/zohaafaiz1" target="_blank" class="btn secondary">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
     <div class="container">
-      <h2>About</h2>
       <p>
-        I’m a Data Science undergraduate focused on building practical analytics and AI systems.
-        I enjoy working close to real data — designing pipelines, structuring datasets, and turning
-        messy inputs into useful insights.
+        I work on data analytics, machine learning, and data-driven applications.
+        My focus is on building practical projects that turn data into insights.
       </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills" class="section muted">
-    <div class="container">
-      <h2>Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <p>Python, SQL, C++, C, C#</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Data & Analytics</h3>
-          <p>Pandas, NumPy, Power BI, PostgreSQL, Data Warehousing</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Machine Learning</h3>
-          <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
-        </div>
-
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <p>Git, ETL Pipelines, OpenCV, Figma</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -89,44 +45,76 @@
       <h2>Projects</h2>
 
       <div class="projects-grid">
-
         <div class="project-card">
           <h3>EV Vehicle Data Warehouse</h3>
-          <p class="project-desc">
-            Designed a PostgreSQL star-schema data warehouse and ETL pipelines to analyze EV and
-            charging-station data, enabling structured analytics and dashboards.
+          <p>
+            Designed a PostgreSQL star-schema data warehouse with ETL pipelines
+            and dashboards for EV and charging station analysis.
           </p>
-          <p class="project-tech">
-            Python · PostgreSQL · ETL · Power BI
-          </p>
-          <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">View on GitHub →</a>
+          <span>Python · PostgreSQL · ETL · Power BI</span><br>
+          <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">GitHub →</a>
         </div>
 
         <div class="project-card">
           <h3>Study Sync</h3>
-          <p class="project-desc">
-            Built a study management platform featuring task tracking, Pomodoro workflows,
-            and AI-based timetable generation to improve study consistency.
+          <p>
+            Built a study management system with task tracking, Pomodoro logic,
+            and AI-based timetable generation.
           </p>
-          <p class="project-tech">
-            Python · AI Logic · Task Systems
-          </p>
-          <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">View on GitHub →</a>
+          <span>Python · AI Logic · Task Systems</span><br>
+          <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">GitHub →</a>
         </div>
 
         <div class="project-card">
           <h3>SMS Spam Classifier</h3>
-          <p class="project-desc">
-            Preprocessed SMS text data and trained Naïve Bayes and SVM models,
-            evaluating performance using precision, recall, and accuracy.
+          <p>
+            Trained and evaluated Naïve Bayes and SVM models for spam detection
+            using real SMS data.
           </p>
-          <p class="project-tech">
-            Python · Scikit-learn · NLP
-          </p>
-          <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">View on GitHub →</a>
+          <span>Python · Scikit-learn · NLP</span><br>
+          <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">GitHub →</a>
         </div>
-
       </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section muted">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div>
+          <h4>Languages</h4>
+          <p>Python, SQL, C++, C, C#</p>
+        </div>
+        <div>
+          <h4>Data & Analytics</h4>
+          <p>Pandas, NumPy, Power BI, PostgreSQL, Data Warehousing</p>
+        </div>
+        <div>
+          <h4>Machine Learning</h4>
+          <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
+        </div>
+        <div>
+          <h4>Tools</h4>
+          <p>Git, ETL Pipelines, OpenCV, Figma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul class="cert-list">
+        <li>Introduction to Python – DataCamp</li>
+        <li>Introduction to SQL – DataCamp</li>
+        <li>Feature Engineering for Machine Learning – DataCamp</li>
+        <li>Introduction to Deep Learning with PyTorch</li>
+        <li>Prompt Engineering with OpenAI API</li>
+      </ul>
     </div>
   </section>
 
