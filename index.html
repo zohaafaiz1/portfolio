@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zoha Faiz | Portfolio</title>
 
   <!-- Google Font -->
@@ -10,11 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- TECH BACKGROUND CANVAS -->
+  <!-- BACKGROUND -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- HERO -->
@@ -24,9 +24,10 @@
         <h1>Zoha Faiz</h1>
         <p class="hero-title">3rd Year Data Science Student</p>
         <p class="hero-desc">
-          Passionate about data analytics, machine learning, and building practical data-driven systems.
+          Data-driven problem solver with hands-on experience in analytics, machine learning, and real-world projects.
         </p>
       </div>
+
       <div class="hero-right">
         <a href="#projects" class="hero-btn">Projects</a>
         <a href="#skills" class="hero-btn">Skills</a>
@@ -40,55 +41,52 @@
   <section id="projects" class="section">
     <div class="container">
       <h2>Projects</h2>
+
       <div class="projects-grid">
 
-        <!-- Project 1 -->
         <div class="project-card">
-          <h3>EV Vehicle Data Warehouse | Developer</h3>
-          <p><strong>Problem:</strong> EV and charging station data was scattered and hard to analyze.</p>
-          <p><strong>Solution:</strong> Designed a PostgreSQL star-schema data warehouse, built ETL pipelines, and dashboards for actionable insights.</p>
-          <p><strong>Tech used:</strong> Python for ETL, PostgreSQL for structured storage, Power BI for dashboards — chosen for scalability and visualization.</p>
-          <p><strong>What broke / Learned:</strong> Handling CSV inconsistencies was tricky; learned robust data cleaning and schema design.</p>
+          <h3>EV Vehicle Data Warehouse</h3>
+          <p><strong>Problem:</strong> EV data scattered across multiple sources.</p>
+          <p><strong>Solution:</strong> Designed PostgreSQL star-schema DW, ETL pipelines, and Power BI dashboards.</p>
+          <p><strong>Tech:</strong> Python, PostgreSQL, Power BI</p>
+          <p><strong>Learned:</strong> Schema design, data cleaning at scale.</p>
           <a href="https://github.com/zohaafaiz1/EV-Vehicle-dw" target="_blank">GitHub →</a>
         </div>
 
-        <!-- Project 2 -->
         <div class="project-card">
-          <h3>Study Sync | Developer</h3>
-          <p><strong>Problem:</strong> Students lacked a unified platform to track study tasks and manage time efficiently.</p>
-          <p><strong>Solution:</strong> Built a web platform with AI-based timetables, Pomodoro timers, task tracking, and water-intake reminders.</p>
-          <p><strong>Tech used:</strong> Python backend for AI scheduling logic, HTML/CSS/JS frontend — easy to prototype and expand features.</p>
-          <p><strong>What broke / Learned:</strong> Syncing real-time tasks was complex; improved async handling and state management.</p>
+          <h3>Study Sync</h3>
+          <p><strong>Problem:</strong> No unified platform for student productivity.</p>
+          <p><strong>Solution:</strong> Built study planner with Pomodoro, tasks, reminders.</p>
+          <p><strong>Tech:</strong> Python, HTML, CSS, JavaScript</p>
+          <p><strong>Learned:</strong> State handling & async logic.</p>
           <a href="https://github.com/zohaafaiz1/Study-sync" target="_blank">GitHub →</a>
         </div>
 
-        <!-- Project 3 -->
         <div class="project-card">
-          <h3>SMS Spam Classifier | Developer</h3>
-          <p><strong>Problem:</strong> Filtering spam messages efficiently from raw SMS data.</p>
-          <p><strong>Solution:</strong> Cleaned & preprocessed text data, trained Naïve Bayes and SVM models, and evaluated predictions.</p>
-          <p><strong>Tech used:</strong> Python, Pandas for preprocessing, Scikit-learn for ML models — for speed and reliability.</p>
-          <p><strong>What broke / Learned:</strong> Feature extraction required fine-tuning; learned importance of TF-IDF and cross-validation.</p>
+          <h3>SMS Spam Classifier</h3>
+          <p><strong>Problem:</strong> Spam detection from raw text.</p>
+          <p><strong>Solution:</strong> Built ML classifiers using TF-IDF.</p>
+          <p><strong>Tech:</strong> Python, Pandas, Scikit-learn</p>
+          <p><strong>Learned:</strong> Feature engineering matters more than models.</p>
           <a href="https://github.com/zohaafaiz1/SMS-SPAM" target="_blank">GitHub →</a>
         </div>
 
-        <!-- Project 4 -->
         <div class="project-card">
-          <h3>Shipping Status Prediction | Developer</h3>
-          <p><strong>Problem:</strong> Predicting shipment delays and statuses from historical logistics data.</p>
-          <p><strong>Solution:</strong> Engineered features, trained Decision Tree and Regression models, and evaluated predictions using MAE/RMSE metrics.</p>
-          <p><strong>Tech used:</strong> Python & Scikit-learn for ML, Pandas for data handling — fast experimentation and analysis.</p>
-          <p><strong>What broke / Learned:</strong> Handling missing data was challenging; learned proper feature imputation and evaluation metrics.</p>
+          <h3>Shipping Status Prediction</h3>
+          <p><strong>Problem:</strong> Predict shipment delays.</p>
+          <p><strong>Solution:</strong> Regression & Decision Tree models.</p>
+          <p><strong>Tech:</strong> Python, Scikit-learn</p>
+          <p><strong>Learned:</strong> Missing data handling.</p>
           <a href="https://github.com/zohaafaiz1/Shipping-prediction" target="_blank">GitHub →</a>
         </div>
 
-        <!-- Project 5 -->
         <div class="project-card">
-          <h3>AI PresenterPro (Ongoing) | Developer</h3>
-          <p><strong>Problem:</strong> Users struggle to improve presentation skills without feedback.</p>
-          <p><strong>Solution:</strong> Built AI system analyzing body language, posture, and eye contact, giving real-time feedback.</p>
-          <p><strong>Tech used:</strong> Python, OpenCV, ML models — real-time detection and feedback with minimal latency.</p>
-          <p><strong>What broke / Learned:</strong> Accurate gaze tracking was tricky; learned calibration techniques and real-time optimization.</p>
+          <h3>AI PresenterPro (Ongoing)</h3>
+          <p><strong>Problem:</strong> No feedback on presentation skills.</p>
+          <p><strong>Solution:</strong> Real-time posture & eye-contact analysis.</p>
+          <p><strong>Tech:</strong> Python, OpenCV</p>
+          <p><strong>Status:</strong> Actively under development.</p>
+          <span class="coming-soon">GitHub – Coming Soon</span>
         </div>
 
       </div>
@@ -100,22 +98,10 @@
     <div class="container">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div>
-          <h4>Languages</h4>
-          <p>Python, SQL, C++, C, C#</p>
-        </div>
-        <div>
-          <h4>Data & Analytics</h4>
-          <p>Pandas, NumPy, Power BI, PostgreSQL</p>
-        </div>
-        <div>
-          <h4>Machine Learning</h4>
-          <p>Scikit-learn, Feature Engineering, Model Evaluation</p>
-        </div>
-        <div>
-          <h4>Tools</h4>
-          <p>Git, ETL Pipelines, OpenCV</p>
-        </div>
+        <div><h4>Languages</h4><p>Python, SQL, C++, C, C#</p></div>
+        <div><h4>Data</h4><p>Pandas, NumPy, Power BI, PostgreSQL</p></div>
+        <div><h4>ML</h4><p>Scikit-learn, Feature Engineering</p></div>
+        <div><h4>Tools</h4><p>Git, ETL Pipelines, OpenCV</p></div>
       </div>
     </div>
   </section>
@@ -125,11 +111,11 @@
     <div class="container">
       <h2>Certificates</h2>
       <ul class="cert-list">
-        <li>Introduction to Python – DataCamp</li>
-        <li>Introduction to SQL – DataCamp</li>
-        <li>Feature Engineering for Machine Learning</li>
-        <li>Introduction to Deep Learning with PyTorch</li>
-        <li>Prompt Engineering with OpenAI API</li>
+        <li>Python – DataCamp</li>
+        <li>SQL – DataCamp</li>
+        <li>Feature Engineering</li>
+        <li>Deep Learning with PyTorch</li>
+        <li>Prompt Engineering</li>
       </ul>
     </div>
   </section>
@@ -140,12 +126,12 @@
       <h2>Contact</h2>
       <p>Email: zohafaiz768@gmail.com</p>
       <p>GitHub: <a href="https://github.com/zohaafaiz1" target="_blank">zohaafaiz1</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/zohaafaiz1" target="_blank">zoha-faiz</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/zoha-faiz" target="_blank">zoha-faiz</a></p>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Zoha Faiz</p>
+    © 2026 Zoha Faiz
   </footer>
 
   <script src="script.js"></script>
